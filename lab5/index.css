@@ -32,6 +32,21 @@
             }
         }
     }
+
+    header > div > div {
+        @media screen and (min-width:800px) {
+            header .page {
+                grid-auto-rows: auto;
+                grid-auto-columns: 1fr 1fr ;
+                display: grid;
+                gap: 2em;
+            }
+        }
+    }
+
+    body{
+        margin: 0;
+    }
     /*    
     <section id="flexbox">
 
@@ -41,6 +56,22 @@
 
         The <h2> inside the section must (on screens with a minimum width of 800px) have a font size of 6em
 
+        */
+    #canvas{
+        @media screen and (min-width:800px){
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    #canvas h2 {
+        @media screen and (min-width:800px) {
+            font-size: 6em;
+        }
+    }
+
+        /*
     <section id="grid">
 
         NOTE: All of the styles noted below must *only* be applied on screens with a minimum width of 800px
