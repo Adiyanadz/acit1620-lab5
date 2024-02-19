@@ -136,3 +136,36 @@
         On screens wider than 800px, the <p> element inside the div must additionally have no top margin
 
 */
+    @media screen and (min-width: 800px) {
+    footer div {
+        justify-content: space-between; 
+        flex-direction: row;
+    }
+    }
+
+    footer p,
+    footer img {
+        margin: 0;  
+    }
+
+    footer div {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+    
+    footer p {
+        justify-self: center;
+        align-items: center;
+        display: flex;
+        order: 1;
+    }
+    
+    footer img {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        order: 2;
+    }
+    
