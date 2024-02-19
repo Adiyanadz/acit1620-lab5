@@ -136,25 +136,36 @@
         On screens wider than 800px, the <p> element inside the div must additionally have no top margin
 
 */
-@media screen and (min-width: 800px) {
-    footer div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-    }
-}
-
+/* Common styles for paragraph and image */
 footer p,
 footer img {
     margin: 0;
 }
 
-footer p {
-    order: 1;
+/* Default styles for footer div */
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+/* Media query for screens wider than 800px */
+@media screen and (min-width: 800px) {
+    /* Adjust layout for wider screens */
+    footer div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Set order for paragraph */
+footer p {
+    order: 1; /* Place paragraph on the left */
+}
+
+/* Set order for image */
 footer img {
-    order: 2; /* Update order for the image */
+    order: 2; /* Place image on the right */
 }
 
